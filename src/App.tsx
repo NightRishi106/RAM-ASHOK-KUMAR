@@ -12,7 +12,6 @@ import EquipmentSection from './components/EquipmentSection';
 import TimelineSection from './components/TimelineSection';
 import ContactSection from './components/ContactSection';
 import VisualDivider from './components/VisualDivider';
-import yantraImg from './assets/yantra.jpg';
 
 export default function App() {
   return (
@@ -22,7 +21,7 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-[#110e0d]/90 backdrop-blur-md border-b border-bronze-dark/40 shadow-lg px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Left side: branding */}
         <div className="flex items-center gap-2.5">
-          <img src={yantraImg} alt="Yantra" className="w-[26px] h-[26px] opacity-90 object-contain rounded-full mix-blend-screen" />
+          <img src="/yantra.jpg" alt="Yantra" className="w-[26px] h-[26px] opacity-90 object-contain rounded-full mix-blend-screen" />
           <div className="flex flex-col text-left">
             <span className="font-serif text-[12.5px] font-bold tracking-[0.25em] text-gold-warm leading-none uppercase">
               R. A. Kumar

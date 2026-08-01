@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Shield, BookOpen, Compass, Eye, Volume2 } from 'lucide-react';
-import benarasImg from '../assets/benaras.jpg';
-import yantraImg from '../assets/yantra.jpg';
 
 export default function HeroSection() {
 
@@ -10,7 +8,7 @@ export default function HeroSection() {
     <section className="relative min-h-[95vh] flex flex-col justify-between items-center text-center px-4 py-12 overflow-hidden paper-grain bg-gradient-to-b from-[#110e0d] via-[#1a1512] to-[#120e0c] border-b border-bronze-dark/40">
       {/* Cinematic Varanasi Sunset Background */}
       <img
-        src={benarasImg}
+        src="/benaras.jpg"
         alt="Varanasi Sunset Ganges"
         className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none z-0"
         referrerPolicy="no-referrer"
@@ -120,7 +118,7 @@ export default function HeroSection() {
               })}
             </g>
           </svg>
-          <img src={yantraImg} alt="Shri Vidya Devi Yantra" className="w-48 h-48 md:w-64 md:h-64 lg:w-[19rem] lg:h-[19rem] opacity-50 object-contain drop-shadow-2xl mix-blend-screen" />
+          <img src="/yantra.jpg" alt="Shri Vidya Devi Yantra" className="w-48 h-48 md:w-64 md:h-64 lg:w-[19rem] lg:h-[19rem] opacity-50 object-contain drop-shadow-2xl mix-blend-screen" />
         </motion.div>
 
         {/* Title */}
