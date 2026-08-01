@@ -21,7 +21,7 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-[#110e0d]/90 backdrop-blur-md border-b border-bronze-dark/40 shadow-lg px-4 md:px-8 py-4 flex items-center justify-between">
         {/* Left side: branding */}
         <div className="flex items-center gap-2.5">
-          <Compass className="w-5 h-5 text-gold-warm" strokeWidth={1.5} />
+          <img src="/yantra.jpg?v=2" alt="Yantra" className="w-[26px] h-[26px] opacity-90 object-contain rounded-full mix-blend-screen" />
           <div className="flex flex-col text-left">
             <span className="font-serif text-[12.5px] font-bold tracking-[0.25em] text-gold-warm leading-none uppercase">
               R. A. Kumar
@@ -34,29 +34,26 @@ export default function App() {
 
         {/* Right side: quick links resembling a library index */}
         <nav className="hidden xl:flex items-center gap-6 font-mono text-[9px] tracking-widest uppercase">
+          <a href="#" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+            Home
+          </a>
           <a href="#about" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .01 Profile
+            About
           </a>
           <a href="#philosophy" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .02 Codex
+            Expertise
           </a>
           <a href="#archives" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .03 Dossiers
+            Services
           </a>
           <a href="#library" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .04 Manuscripts
+            Research
           </a>
           <a href="#myths" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .05 Ledger
+            Blog
           </a>
-          <a href="#equipment" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .06 Laboratory
-          </a>
-          <a href="#timeline" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
-            .07 Chronicle
-          </a>
-          <a href="#contact" className="px-3 py-1.5 rounded bg-bronze-dark/40 border border-gold-faded/35 text-gold-warm hover:border-gold-warm transition-all duration-300">
-            .08 Dispatch
+          <a href="#contact" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+            Contact
           </a>
         </nav>
 

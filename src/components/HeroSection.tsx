@@ -69,21 +69,56 @@ export default function HeroSection() {
       </div>
 
       {/* Central Hero Block */}
-      <div className="z-10 max-w-4xl my-auto px-4 flex flex-col items-center">
-        {/* Ancient Logo Symbol */}
+      <div className="z-10 max-w-4xl my-auto px-4 flex flex-col items-center relative py-20">
+        {/* Ancient Logo Symbol (Moved behind text) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
-          className="relative w-16 h-16 mb-8 flex items-center justify-center text-gold-faded"
+          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[32rem] h-[32rem] md:w-[40rem] md:h-[40rem] lg:w-[48rem] lg:h-[48rem] flex items-center justify-center text-gold-faded pointer-events-none z-[-1]"
         >
           {/* Ornate Circular Border */}
-          <svg className="absolute inset-0 w-full h-full animate-[spin_120s_linear_infinite]" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="0.75" strokeDasharray="3 3" fill="none" />
-            <circle cx="50" cy="50" r="42" stroke="currentColor" strokeWidth="1" strokeDasharray="12 4" fill="none" />
-            <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="0.5" fill="none" />
+          <svg className="absolute inset-0 m-auto w-1/2 h-1/2 animate-[spin_120s_linear_infinite] opacity-50" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="97" stroke="currentColor" strokeWidth="2.125" fill="none" />
+            <circle cx="100" cy="100" r="93" stroke="currentColor" strokeWidth="0.85" fill="none" />
+            <circle cx="100" cy="100" r="77" stroke="currentColor" strokeWidth="0.85" fill="none" />
+            <circle cx="100" cy="100" r="73" stroke="currentColor" strokeWidth="2.125" fill="none" />
+            
+            <g stroke="currentColor" fill="none">
+              {[...Array(72)].map((_, i) => {
+                const isEven = i % 2 === 0;
+                const rOut = 93;
+                const rIn = 77;
+                const aB = i * 5 * Math.PI / 180;
+                const aA = (i + 1) * 5 * Math.PI / 180;
+                const aC = (i + 2) * 5 * Math.PI / 180;
+                const rB = isEven ? rOut : rIn;
+                const rA = isEven ? rIn : rOut;
+                const rC = isEven ? rOut : rIn;
+                
+                const B = { x: 100 + rB * Math.sin(aB), y: 100 - rB * Math.cos(aB) };
+                const A = { x: 100 + rA * Math.sin(aA), y: 100 - rA * Math.cos(aA) };
+                const C = { x: 100 + rC * Math.sin(aC), y: 100 - rC * Math.cos(aC) };
+                
+                return (
+                  <g key={i}>
+                    <line x1={B.x} y1={B.y} x2={A.x} y2={A.y} strokeWidth="1.275" />
+                    {[0.2, 0.4, 0.6, 0.8].map(s => (
+                      <line
+                        key={s}
+                        x1={(1 - s) * C.x + s * A.x}
+                        y1={(1 - s) * C.y + s * A.y}
+                        x2={(1 - s) * C.x + s * B.x}
+                        y2={(1 - s) * C.y + s * B.y}
+                        strokeWidth="0.6375"
+                      />
+                    ))}
+                  </g>
+                );
+              })}
+            </g>
           </svg>
-          <Compass className="w-7 h-7 text-gold-warm" strokeWidth={1.2} />
+          <img src="/yantra.jpg?v=2" alt="Shri Vidya Devi Yantra" className="w-48 h-48 md:w-64 md:h-64 lg:w-[19rem] lg:h-[19rem] opacity-50 object-contain drop-shadow-2xl mix-blend-screen" />
         </motion.div>
 
         {/* Title */}
@@ -119,7 +154,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.7 }}
-          className="text-sm md:text-base text-ancient-beige/70 font-vintage italic leading-relaxed max-w-2xl px-2"
+          className="text-base md:text-lg text-ancient-beige/70 font-vintage italic leading-relaxed max-w-2xl px-2"
         >
           "To investigate anomalies not as curses or mystical interventions, but as geological fractures, subterranean magnetic friction, and ancient structural acoustics waiting to be mapped."
         </motion.p>
