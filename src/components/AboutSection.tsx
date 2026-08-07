@@ -4,14 +4,16 @@ import { Shield, BookOpen, GraduationCap, MapPin, Award } from 'lucide-react';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 paper-grain bg-[#1c1613] overflow-hidden border-b border-bronze-dark/40">
-      {/* Ancient Temple Outline SVG Background Overlay - very faint */}
-      <div className="absolute right-0 bottom-0 w-96 h-96 opacity-5 pointer-events-none select-none text-gold-faded z-0">
-        <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full">
-          {/* Symmetrical Indian temple gopuram outline */}
-          <path d="M50,10 L45,15 L55,15 Z M42,15 L35,25 L65,25 L58,15 Z M32,25 L20,45 L80,45 L68,25 Z M18,45 L5,85 L95,85 L82,45 Z M5,85 L5,95 L95,95 L95,85 Z" />
-        </svg>
-      </div>
+    <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 overflow-hidden border-b border-bronze-dark/40">
+      {/* Background Texture from User */}
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: "url('/BACKGROUND%201.jpg')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center', 
+        }} 
+      />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -20,7 +22,7 @@ export default function AboutSection() {
           <div className="lg:col-span-5 flex flex-col items-center">
             
             {/* Antique Framed Photo of Ram Ashok Kumar */}
-            <div className="relative p-4 bg-ancient-dark border border-bronze-light/30 rounded-lg shadow-[0_15px_40px_rgba(0,0,0,0.8)] max-w-sm w-full">
+            <div className="relative p-4 bg-ancient-dark/60 backdrop-blur-sm border border-bronze-light/30 rounded-lg shadow-[0_15px_40px_rgba(0,0,0,0.8)] max-w-sm w-full">
               {/* Copper corner brackets */}
               <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-gold-faded/60" />
               <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-gold-faded/60" />
@@ -28,8 +30,7 @@ export default function AboutSection() {
               <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-gold-faded/60" />
 
               {/* Photo Canvas */}
-              <div className="relative aspect-[3/4] overflow-hidden rounded bg-[#1e1a17] border border-bronze-dark/60">
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30 opacity-70" />
+              <div className="relative aspect-[3/4] overflow-hidden rounded bg-transparent border border-bronze-dark/60">
                 
                 {/* Fallback image of a dignified, scholarly elder in his late 50s */}
                 <img
@@ -69,7 +70,7 @@ export default function AboutSection() {
           </div>
 
           {/* Right Column: Biography & Details (7 cols on lg) */}
-          <div className="lg:col-span-7 flex flex-col justify-center">
+          <div className="lg:col-span-7 flex flex-col justify-center bg-ancient-dark/60 backdrop-blur-sm border border-bronze-light/30 rounded-lg p-8 shadow-[0_15px_40px_rgba(0,0,0,0.8)]">
             
             {/* Header */}
             <div className="flex items-center gap-3 mb-3">
@@ -95,7 +96,7 @@ export default function AboutSection() {
               {/* Mission points styled as vintage tags */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                 
-                <div className="p-4 bg-ancient-charcoal/40 border border-bronze-dark/50 rounded flex items-start gap-3">
+                <div className="py-2 flex items-start gap-3">
                   <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
                     <GraduationCap className="w-4 h-4" />
                   </div>
@@ -105,7 +106,7 @@ export default function AboutSection() {
                   </div>
                 </div>
 
-                <div className="p-4 bg-ancient-charcoal/40 border border-bronze-dark/50 rounded flex items-start gap-3">
+                <div className="py-2 flex items-start gap-3">
                   <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
                     <MapPin className="w-4 h-4" />
                   </div>
@@ -115,7 +116,7 @@ export default function AboutSection() {
                   </div>
                 </div>
 
-                <div className="p-4 bg-ancient-charcoal/40 border border-bronze-dark/50 rounded flex items-start gap-3">
+                <div className="py-2 flex items-start gap-3">
                   <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
                     <Award className="w-4 h-4" />
                   </div>
@@ -125,7 +126,7 @@ export default function AboutSection() {
                   </div>
                 </div>
 
-                <div className="p-4 bg-ancient-charcoal/40 border border-bronze-dark/50 rounded flex items-start gap-3">
+                <div className="py-2 flex items-start gap-3">
                   <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
                     <BookOpen className="w-4 h-4" />
                   </div>
@@ -138,7 +139,7 @@ export default function AboutSection() {
               </div>
 
               {/* Research Philosophy block */}
-              <div className="mt-6 p-6 border-l-2 border-gold-faded bg-ancient-charcoal/30 rounded-r">
+              <div className="mt-6 py-4">
                 <h3 className="font-serif text-sm tracking-widest text-gold-warm font-semibold uppercase mb-2">The Research philosophy</h3>
                 <p className="text-xs text-ancient-beige/70 italic leading-relaxed m-0">
                   "In the traditional Indian sciences, the Earth is seen as an active energetic network. Vastu, Shilpa, and Rasa Shastras mapped these points of friction. Modern geophysics names them magnetic anomalies, acoustic resonance, and chemical ionization. We do not destroy old legends; we decode them."
