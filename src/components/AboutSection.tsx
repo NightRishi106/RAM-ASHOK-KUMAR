@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Shield, BookOpen, GraduationCap, MapPin, Award } from 'lucide-react';
-import portraitImg from '../assets/PORTRAIT.jpeg';
 
 export default function AboutSection() {
   return (
@@ -34,7 +33,7 @@ export default function AboutSection() {
                 
                 {/* Fallback image of a dignified, scholarly elder in his late 50s */}
                 <img
-                  src={portraitImg}
+                  src="/PORTRAIT.jpeg"
                   alt="Ram Ashok Kumar Portrait"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-1000"
