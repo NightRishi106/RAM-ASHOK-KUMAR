@@ -11,7 +11,16 @@ export default function LibrarySection() {
   const selectedBook = libraryItems.find(item => item.id === selectedBookId) || libraryItems[0];
 
   return (
-    <section id="library" className="relative py-24 px-4 md:px-8 lg:px-16 bg-[#1a1411] overflow-hidden border-b border-bronze-dark/40">
+    <section id="library" className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden border-b border-bronze-dark/40">
+      {/* Background Texture from User */}
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: "url('/BACKGROUND%202.jpg')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center', 
+        }} 
+      />
       {/* Heavy Vignette */}
       <div className="absolute inset-0 vignette-heavy pointer-events-none" />
 

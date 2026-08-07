@@ -20,7 +20,16 @@ export default function MythRealitySection() {
   };
 
   return (
-    <section id="myths" className="relative py-24 px-4 md:px-8 lg:px-16 bg-[#130f0e] overflow-hidden border-b border-bronze-dark/40">
+    <section id="myths" className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden border-b border-bronze-dark/40">
+      {/* Background Texture from User */}
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{ 
+          backgroundImage: "url('/BACKGROUND%201.jpg')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center', 
+        }} 
+      />
       {/* Vignette vignette ambient */}
       <div className="absolute inset-0 vignette-ambient pointer-events-none" />
 
