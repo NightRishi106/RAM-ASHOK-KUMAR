@@ -39,12 +39,12 @@ export default function InvestigationsSection() {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 mb-2">
-            <span className="font-mono text-[10px] tracking-[0.3em] text-gold-faded uppercase">Classified Dossiers</span>
+            <span className="font-mono text-[10px] tracking-[0.3em] text-[#3a2e24] font-bold uppercase">Classified Dossiers</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-serif text-gold-warm tracking-wide font-medium">
+          <h2 className="text-3xl md:text-4xl font-serif text-[#2e241f] tracking-wide font-bold">
             FEATURED INVESTIGATIONS
           </h2>
-          <p className="mt-4 text-xs md:text-sm text-ancient-beige/65 font-vintage italic leading-relaxed">
+          <p className="mt-4 text-xs md:text-sm text-[#3a2e24]/90 font-vintage italic leading-relaxed">
             "Every drawer holds a physical trace of an anomaly. Pull a drawer handle to extract the classified field binder."
           </p>
         </div>

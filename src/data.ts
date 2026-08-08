@@ -223,39 +223,93 @@ export const libraryItems: LibraryItem[] = [
 
 export const timelineMilestones: TimelineMilestone[] = [
   {
-    id: 'tl-1999',
-    year: 1999,
-    title: 'The Inception of Rational Research',
-    location: 'Dehradun, Uttarakhand',
-    achievement: 'Founded the Center for Anomalous Geological Studies',
-    narrative: 'After graduating in applied geophysics, Ram Ashok Kumar realized that the vast majority of paranormal reports in India were misclassified natural anomalies. He set out to build a scientific team using geological tools instead of mystical rituals.',
-    sketchLabel: 'First portable magnetometer, custom calibrated in Dehradun, 1999'
+    id: 'tl-2000',
+    year: 2000,
+    title: 'The Spiritual Awakening',
+    location: 'Banaras (Varanasi)',
+    achievement: 'Formal education in Tantra Science',
+    narrative: 'Ram Ashok Kumar began his formal education in Tantra Science, training under the legendary Kina Ram Sampradaya in Banaras (Varanasi) — a lineage older than memory.',
+    sketchLabel: 'Entry №01'
   },
   {
-    id: 'tl-2005',
-    year: 2005,
-    title: 'The Hampi Resonance Discovery',
-    location: 'Vittala Temple, Karnataka',
-    achievement: 'First acoustic recording of the silent bedrock frequency',
-    narrative: 'Kumar spent six months documenting the structural physics of the stone pillars. Using customized seismic accelerometers, he published the first conclusive paper proving the pillars resonated in response to sub-surface river rapids.',
-    sketchLabel: 'Faded graphite sketch of the stone pillar joint assembly'
+    id: 'tl-2003',
+    year: 2003,
+    title: 'The Genesis',
+    location: 'India',
+    achievement: 'Paranormal Mechanism founded',
+    narrative: 'Paranormal Mechanism is founded — a specialized institution dedicated to researching unexplained anomalies and dark regional phenomena across the subcontinent.',
+    sketchLabel: 'Entry №02'
+  },
+  {
+    id: 'tl-2009',
+    year: 2009,
+    title: 'Canonical Ingestion',
+    location: 'India',
+    achievement: 'Deeper study of Tantra Science',
+    narrative: 'Deeper study of Tantra Science, aligning fieldwork directly with strict principles found in Hindu Dharmashastra to decode complex spiritual entities.',
+    sketchLabel: 'Entry №03'
   },
   {
     id: 'tl-2012',
     year: 2012,
-    title: 'The Desert Mapping Expedition',
-    location: 'Kuldhara & Bhangarh',
-    achievement: 'First 72-hour continuous microclimate and EM survey',
-    narrative: 'Kumar led a team of six physicists to map the thermal and magnetic shifts of the Rajasthan desert. The expedition established that over 90% of local "haunting" events occurred at specific magnetic fault line coordinates during thermal inversion.',
-    sketchLabel: 'Ink chart mapping localized midnight temperature drops'
+    title: 'Ultimate Expertise',
+    location: 'India',
+    achievement: 'Mastery over Metaphysics and Tantra Science',
+    narrative: 'Recognized mastery over Metaphysics and Tantra Science — the transition from investigator into a leading authority on energy binding and containment.',
+    sketchLabel: 'Entry №04'
+  },
+  {
+    id: 'tl-2014',
+    year: 2014,
+    title: 'Entering the Digital Realm',
+    location: 'Global',
+    achievement: 'Social media launch',
+    narrative: 'Paranormal Mechanism launches across global social media networks. Private case archives open to the public for the first time.',
+    sketchLabel: 'Entry №05'
+  },
+  {
+    id: 'tl-2015',
+    year: 2015,
+    title: 'The Science Phase',
+    location: 'India',
+    achievement: 'Crossroads of psychology and environment',
+    narrative: 'Organizational horizons expand into the crossroads of psychology and environment — Pareidolia, the Placebo Effect, Schizophrenia, Hysteria, Geopathic Stress, and Idiopathic anomalies — to eliminate false positives in field research.',
+    sketchLabel: 'Entry №06'
   },
   {
     id: 'tl-2019',
     year: 2019,
-    title: 'Exhibition of the Archaeological Archives',
-    location: 'National Museum (Guest Lecturer)',
-    achievement: 'Showcased the "Science of Myth" physical equipment',
-    narrative: 'Ram Ashok Kumar was invited to showcase his custom-built field equipment. The exhibition aimed to bridge the gap between ancient temple science, vastu architectural geometry, and modern acoustic physics.',
-    sketchLabel: 'Curator tag: Custom tri-field coil assembly on cedar block'
+    title: 'Alliance Building',
+    location: 'Global',
+    achievement: 'Cross-collaborations with premier investigators',
+    narrative: 'Cross-collaborations with premier paranormal investigators worldwide transform the unit into an interconnected hub for advanced research.',
+    sketchLabel: 'Entry №07'
+  },
+  {
+    id: 'tl-2021',
+    year: 2021,
+    title: 'The 100K Milestone',
+    location: 'Global',
+    achievement: '100,000 dedicated followers',
+    narrative: 'Mass public recognition arrives — over 100,000 dedicated followers, a loyal community of lore hunters and skeptics alike.',
+    sketchLabel: 'Entry №08'
+  },
+  {
+    id: 'tl-2024',
+    year: 2024,
+    title: 'Mainstream Media Ingestion',
+    location: 'India',
+    achievement: 'National media campaign',
+    narrative: 'A national media campaign brings high-profile appearances across prominent podcast circuits and news outlets.',
+    sketchLabel: 'Entry №09'
+  },
+  {
+    id: 'tl-present',
+    year: 'Present',
+    title: 'Global Outreach & Resolution',
+    location: 'Global',
+    achievement: 'Spiritual relief and education',
+    narrative: 'Decades of metaphysical research, psychological insight, and Tantric knowledge are now leveraged to provide spiritual relief, resolution, and education to thousands worldwide.',
+    sketchLabel: 'Entry №10'
   }
 ];

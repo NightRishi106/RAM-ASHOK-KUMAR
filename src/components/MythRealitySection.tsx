@@ -38,12 +38,12 @@ export default function MythRealitySection() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 mb-2">
-            <span className="font-mono text-[10px] tracking-[0.3em] text-gold-faded uppercase">The Ledger of Truth</span>
+            <span className="font-mono text-[10px] tracking-[0.3em] text-[#3a2e24] font-bold uppercase">The Ledger of Truth</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-serif text-gold-warm tracking-wide font-medium">
+          <h2 className="text-3xl md:text-4xl font-serif text-[#2e241f] tracking-wide font-bold">
             MYTH VS REALITY
           </h2>
-          <p className="mt-4 text-xs md:text-sm text-ancient-beige/65 font-vintage italic leading-relaxed">
+          <p className="text-[#3a2e24]/90 font-vintage italic leading-[30px] text-[40px] w-[900px] ml-[20px] mr-0 mt-0 pr-[250px]">
             "We do not dismiss local memories; we study them. Every superstition contains the kernel of an unmapped physical phenomenon."
           </p>
         </div>

@@ -52,7 +52,7 @@ export interface LibraryItem {
 
 export interface TimelineMilestone {
   id: string;
-  year: number;
+  year: number | string;
   title: string;
   location: string;
   achievement: string;

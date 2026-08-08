@@ -23,13 +23,13 @@ export default function TimelineSection() {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-3 mb-2">
-            <span className="font-mono text-[10px] tracking-[0.3em] text-gold-faded uppercase">The Ledger of Years</span>
+            <span className="font-mono text-[10px] tracking-[0.3em] text-[#3a2e24] font-bold uppercase">A quarter-century of unquiet work.</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-serif text-gold-warm tracking-wide font-medium">
-            FIELD WORK TIMELINE
+          <h2 className="text-3xl md:text-4xl font-serif text-[#2e241f] tracking-wide font-bold">
+            Chronology
           </h2>
-          <p className="mt-4 text-xs md:text-sm text-ancient-beige/65 font-vintage italic leading-relaxed">
-            "An chronological registry of empirical milestones, engraved in the parchment annals of the Institute."
+          <p className="mt-4 text-xs md:text-sm text-[#3a2e24]/90 font-vintage italic leading-relaxed">
+            "From the cremation grounds of Banaras to the glow of a hundred thousand screens — the long ledger of how Paranormal Mechanism became what it is."
           </p>
         </div>
 
@@ -69,35 +69,10 @@ export default function TimelineSection() {
                         </div>
                       </div>
                     ) : (
-                      /* Technical Sketch Ink Block */
-                      <div className="p-4 bg-[#ede2d4] border border-[#a38c5f]/30 rounded flex flex-col items-center md:items-start text-center md:text-left shadow-inner">
-                        <span className="font-mono text-[7px] text-[#544338]/60 tracking-wider uppercase block mb-2">Technical Field Plate</span>
-                        
-                        {/* Custom Blueprint SVG representing ink sketches */}
-                        {milestone.id === 'tl-2005' && (
-                          <svg className="w-40 h-20 text-amber-950/40" viewBox="0 0 200 100" fill="none">
-                            {/* Harmonic pillars blueprint */}
-                            <rect x="20" y="20" width="12" height="70" rx="1" stroke="currentColor" strokeWidth="0.75" />
-                            <rect x="40" y="10" width="12" height="80" rx="1" stroke="currentColor" strokeWidth="0.75" />
-                            <rect x="60" y="30" width="12" height="60" rx="1" stroke="currentColor" strokeWidth="0.75" />
-                            <line x1="10" y1="90" x2="190" y2="90" stroke="currentColor" strokeWidth="0.75" />
-                            <circle cx="46" cy="50" r="15" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
-                            <text x="85" y="45" fontFamily="monospace" fontSize="6.5" fill="currentColor">NADA CORE: 111Hz</text>
-                          </svg>
-                        )}
-                        {milestone.id === 'tl-2019' && (
-                          <svg className="w-40 h-20 text-amber-950/40" viewBox="0 0 200 100" fill="none">
-                            {/* Dial / Coil assemblies */}
-                            <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="0.75" />
-                            <circle cx="50" cy="50" r="2" fill="currentColor" />
-                            <line x1="50" y1="50" x2="72" y2="35" stroke="currentColor" strokeWidth="1" />
-                            <path d="M 20 50 Q 50 10, 80 50" stroke="currentColor" strokeWidth="0.5" strokeDasharray="2 2" />
-                            <text x="95" y="55" fontFamily="monospace" fontSize="6.5" fill="currentColor">COIL WINDING TYPE-A</text>
-                          </svg>
-                        )}
-                        
-                        <span className="font-vintage text-[10.5px] italic text-[#544338] mt-2 block leading-snug">
-                          "{milestone.sketchLabel}"
+                      /* Entry Label Block */
+                      <div className="p-4 bg-[#ede2d4] border border-[#a38c5f]/30 rounded flex flex-col items-center md:items-end text-center md:text-right shadow-inner justify-center h-[80px]">
+                        <span className="font-mono text-[14px] text-[#544338] tracking-widest uppercase block font-bold">
+                          {milestone.sketchLabel}
                         </span>
                       </div>
                     )}
@@ -106,32 +81,10 @@ export default function TimelineSection() {
                   {/* Right Side (or opposite side spacing) */}
                   <div className="w-full md:w-1/2 pl-12 md:px-8 mt-4 md:mt-0 text-left flex flex-col justify-center">
                     {isEven ? (
-                      /* Technical Sketch Ink Block */
-                      <div className="p-4 bg-[#ede2d4] border border-[#a38c5f]/30 rounded flex flex-col items-center md:items-start text-center md:text-left shadow-inner mb-4 md:mb-0">
-                        <span className="font-mono text-[7px] text-[#544338]/60 tracking-wider uppercase block mb-2">Technical Field Plate</span>
-                        
-                        {/* Blueprint SVG */}
-                        {milestone.id === 'tl-1999' && (
-                          <svg className="w-40 h-20 text-amber-950/40" viewBox="0 0 200 100" fill="none">
-                            {/* Magnetometer layout */}
-                            <rect x="70" y="10" width="60" height="40" rx="2" stroke="currentColor" strokeWidth="0.75" />
-                            <line x1="100" y1="50" x2="100" y2="90" stroke="currentColor" strokeWidth="0.75" />
-                            <circle cx="100" cy="90" r="4" fill="currentColor" />
-                            <line x1="30" y1="30" x2="70" y2="30" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3 3" />
-                            <text x="10" y="25" fontFamily="monospace" fontSize="6.5" fill="currentColor">CALIBRATION POINT 0.1</text>
-                          </svg>
-                        )}
-                        {milestone.id === 'tl-2012' && (
-                          <svg className="w-40 h-20 text-amber-950/40" viewBox="0 0 200 100" fill="none">
-                            {/* Soil profile graph */}
-                            <path d="M 10 70 Q 50 10, 100 80 T 190 30" stroke="currentColor" strokeWidth="0.75" />
-                            <line x1="10" y1="90" x2="190" y2="90" stroke="currentColor" strokeWidth="0.5" />
-                            <text x="110" y="25" fontFamily="monospace" fontSize="6.5" fill="currentColor">THERM INVERSION PT.9</text>
-                          </svg>
-                        )}
-                        
-                        <span className="font-vintage text-[10.5px] italic text-[#544338] mt-2 block leading-snug">
-                          "{milestone.sketchLabel}"
+                      /* Entry Label Block */
+                      <div className="p-4 bg-[#ede2d4] border border-[#a38c5f]/30 rounded flex flex-col items-center md:items-start text-center md:text-left shadow-inner mb-4 md:mb-0 justify-center h-[80px]">
+                        <span className="font-mono text-[14px] text-[#544338] tracking-widest uppercase block font-bold">
+                          {milestone.sketchLabel}
                         </span>
                       </div>
                     ) : (
@@ -164,9 +117,9 @@ export default function TimelineSection() {
           </div>
 
           {/* Ledger Seal Decal Footer */}
-          <div className="mt-16 flex items-center justify-center gap-2 text-[10.5px] font-mono text-[#544338]/55 uppercase tracking-[0.2em] pt-6 border-t border-[#a38c5f]/20">
+          <div className="mt-16 flex items-center justify-center gap-2 text-[14px] font-mono text-[#544338] uppercase tracking-[0.2em] pt-6 border-t border-[#a38c5f]/20 font-bold">
             <Feather className="w-4 h-4 text-amber-900/60" />
-            <span>Engraved Ledger of the Varanasi Institute</span>
+            <span>— the ledger remains open —</span>
           </div>
 
         </div>
