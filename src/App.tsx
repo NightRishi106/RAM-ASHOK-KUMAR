@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Compass, Shield, Map, Landmark, Clock, Coffee, BookOpen, Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 
 // Modular components import
 import HeroSection from './components/HeroSection';
