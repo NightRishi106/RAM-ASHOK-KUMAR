@@ -1,5 +1,5 @@
-import React from 'react';
-import { Compass, Shield, Map, Landmark, Clock, Coffee, BookOpen } from 'lucide-react';
+import React, { useState } from 'react';
+import { Compass, Shield, Map, Landmark, Clock, Coffee, BookOpen, Menu, X } from 'lucide-react';
 
 // Modular components import
 import HeroSection from './components/HeroSection';
@@ -15,6 +15,8 @@ import VisualDivider from './components/VisualDivider';
 import TransparentYantra from './components/TransparentYantra';
 
 export default function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-[#0f0d0c] text-ancient-beige font-sans selection:bg-gold-warm selection:text-ancient-dark overflow-x-hidden vintage-scrollbar">
       
@@ -34,38 +36,67 @@ export default function App() {
         </div>
 
         {/* Right side: quick links resembling a library index */}
-        <nav className="hidden xl:flex items-center gap-6 font-mono text-[9px] tracking-widest uppercase">
-          <a href="#" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+        <nav className="hidden lg:flex items-center gap-6 font-mono text-xs tracking-widest uppercase">
+          <a href="#" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             Home
           </a>
-          <a href="#about" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+          <a href="#about" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             About
           </a>
-          <a href="#philosophy" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+          <a href="#philosophy" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             Expertise
           </a>
-          <a href="#archives" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+          <a href="#archives" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             Services
           </a>
-          <a href="#library" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+          <a href="#library" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             Research
           </a>
-          <a href="#myths" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+          <a href="#myths" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             Blog
           </a>
-          <a href="#contact" className="text-ancient-beige/50 hover:text-gold-warm transition-colors duration-300">
+          <a href="#contact" className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
             Contact
           </a>
         </nav>
 
-        {/* Small badge for narrow layouts */}
-        <div className="xl:hidden flex items-center gap-1.5 px-2.5 py-1 bg-bronze-dark/30 border border-gold-faded/20 rounded">
-          <Shield className="w-3.5 h-3.5 text-gold-warm" />
-          <span className="font-mono text-[7.5px] tracking-widest text-gold-faded font-bold uppercase">
-            EST. 1999
-          </span>
+        {/* Mobile menu toggle */}
+        <div className="lg:hidden flex items-center">
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="p-2 text-gold-faded hover:text-gold-warm transition-colors"
+          >
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
         </div>
       </header>
+
+      {/* Mobile Menu Dropdown */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden sticky top-[68px] z-40 bg-[#110e0d]/95 backdrop-blur-md border-b border-bronze-dark/40 shadow-lg px-6 py-4 flex flex-col gap-4 font-mono text-sm tracking-widest uppercase">
+          <a href="#" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            Home
+          </a>
+          <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            About
+          </a>
+          <a href="#philosophy" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            Expertise
+          </a>
+          <a href="#archives" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            Services
+          </a>
+          <a href="#library" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            Research
+          </a>
+          <a href="#myths" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            Blog
+          </a>
+          <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+            Contact
+          </a>
+        </div>
+      )}
 
       {/* Main content sections with thematic transitions */}
       <main className="relative">
