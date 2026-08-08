@@ -52,6 +52,12 @@ export default function ContactSection() {
       setSentLetters(updated);
       localStorage.setItem('cags_correspondence', JSON.stringify(updated));
 
+      // Trigger email client
+      const mailtoLink = `mailto:ramashokkumar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `From: ${name} (${email})\n\n${message}`
+      )}`;
+      window.location.href = mailtoLink;
+
       // Reset form fields
       setName('');
       setEmail('');
