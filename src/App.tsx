@@ -73,31 +73,39 @@ export default function App() {
       </header>
 
       {/* Mobile Menu Dropdown */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden sticky top-[68px] z-40 bg-[#110e0d]/95 backdrop-blur-md border-b border-bronze-dark/40 shadow-lg px-6 py-4 flex flex-col gap-4 font-mono text-sm tracking-widest uppercase">
-          <a href="#" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            Home
-          </a>
-          <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            About
-          </a>
-          <a href="#philosophy" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            Expertise
-          </a>
-          <a href="#archives" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            Services
-          </a>
-          <a href="#library" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            Research
-          </a>
-          <a href="#myths" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            Blog
-          </a>
-          <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
-            Contact
-          </a>
-        </div>
-      )}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0, y: -10 }}
+            animate={{ opacity: 1, height: 'auto', y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -10 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="lg:hidden sticky top-[68px] z-40 bg-[#110e0d]/95 backdrop-blur-md border-b border-bronze-dark/40 shadow-lg px-6 py-4 flex flex-col gap-4 font-mono text-sm tracking-widest uppercase overflow-hidden"
+          >
+            <a href="#" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              Home
+            </a>
+            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              About
+            </a>
+            <a href="#philosophy" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              Expertise
+            </a>
+            <a href="#archives" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              Services
+            </a>
+            <a href="#library" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              Research
+            </a>
+            <a href="#myths" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              Blog
+            </a>
+            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-ancient-beige/70 hover:text-gold-warm transition-colors duration-300">
+              Contact
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Main content sections with thematic transitions */}
       <main className="relative">
