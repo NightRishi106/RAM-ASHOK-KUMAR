@@ -116,7 +116,7 @@ export default function LibrarySection() {
 
                         {/* Book Title (Rendered vertically or packed small) */}
                         <div className="my-auto flex items-center justify-center">
-                          <span className="text-[9px] font-serif font-bold tracking-widest text-center uppercase whitespace-pre-line rotate-180 writing-mode-vertical select-none text-glow-amber">
+                          <span className="text-[9px] font-serif font-bold tracking-widest text-center uppercase whitespace-pre-line [writing-mode:vertical-rl] select-none text-glow-amber">
                             {book.title.replace('The ', '').split(' ')[0]}
                           </span>
                         </div>

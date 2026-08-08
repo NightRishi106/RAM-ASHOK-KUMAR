@@ -75,77 +75,85 @@ export default function AboutSection() {
             {/* Header */}
             <div className="flex items-center gap-3 mb-3">
               <div className="h-[1px] w-8 bg-gold-faded" />
-              <span className="font-mono text-[10px] tracking-[0.3em] text-gold-faded uppercase">The Archivist & The Geologist</span>
+              <span className="font-mono text-[10px] tracking-[0.3em] text-gold-faded uppercase">The Investigator</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl font-serif text-gold-warm tracking-wide font-medium">
-              Scientifically-Inclined Paranormal Researcher & Aghor-Tantra Practitioner
+              Indian Paranormal Investigator & Practitioner of Tantra
             </h2>
             
             <div className="h-[1px] w-full bg-gradient-to-r from-gold-faded/30 to-transparent my-6" />
 
             {/* Biography block */}
-            <div className="space-y-6 text-sm text-ancient-beige/85 leading-relaxed font-sans font-light">
-              <p>
-                For over 25 years, <strong className="font-medium text-gold-warm">Ram Ashok Kumar</strong> has pioneered a rare methodology that bridges Indian archaeology, classical temple architecture (Vastu Shastra), and advanced modern geophysics. After graduating from the Banaras Hindu University (BHU) with a Masters in Applied Geophysics, his initial work with national geological surveys repeatedly brought him into contact with regions associated with heavy folklore, ancient curses, and unexplained phenomena.
-              </p>
-              <p>
-                Recognizing that these "anomalous zones" were almost always connected to significant subterranean geological features—iron-ore compact basalt, thorium monazite deposits, underground hot water channels, and natural ellipsoidal cave echoes—he established the <strong className="font-medium text-gold-faded">Center for Anomalous Geological Studies (CAGS)</strong> in 1999.
+            <div className="space-y-8 text-sm text-ancient-beige/85 leading-relaxed font-sans font-light">
+              <p className="text-base">
+                <strong className="font-medium text-gold-warm">Ram Ashok Kumar</strong> (often referred to as Ram Ashok Ji) is an Indian paranormal investigator and practitioner of Tantra with over 25 years of experience exploring supernatural phenomena.
               </p>
               
-              {/* Mission points styled as vintage tags */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-4">
+                <div className="space-y-4">
+                  <h3 className="font-serif text-gold-warm text-lg mb-3 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-gold-faded"></span> Overview & Background
+                  </h3>
+                  <ul className="space-y-4">
+                    <li><strong className="text-gold-faded font-medium">Experience:</strong> Over 25 years in active field investigation, having handled over 1,000 cases of alleged hauntings, possessions, and unexplained occurrences.</li>
+                    <li><strong className="text-gold-faded font-medium">Primary Region:</strong> Primarily active across Delhi NCR, investigating abandoned sites, historical havelis, crematoriums, and private residential cases.</li>
+                    <li><strong className="text-gold-faded font-medium">Digital Presence:</strong> Content creator and founder behind the YouTube channel @paranormalmechanism, where he breaks down paranormal cases, entity behaviors, and field investigations.</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="font-serif text-gold-warm text-lg mb-3 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-gold-faded"></span> Investigative Philosophy
+                  </h3>
+                  <ul className="space-y-4">
+                    <li><strong className="text-gold-faded font-medium">Science & Spiritual Practice:</strong> Combines electronic paranormal detection equipment (video analysis, EMF, temperature tracking) with traditional Indian spiritual and Tantric techniques to evaluate claim evidence.</li>
+                    <li><strong className="text-gold-faded font-medium">Focus on Evidence:</strong> Emphasizes analyzing physical evidence, video captures, and psychological/environmental factors rather than relying on sensationalized horror narratives.</li>
+                    <li><strong className="text-gold-faded font-medium">Study of Entities:</strong> Discusses entity classifications in traditional contexts—including Munjya (Rakt Pishach), Jinn, poltergeist activity, and house curses.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="h-[1px] w-full bg-gradient-to-r from-bronze-dark/50 to-transparent my-6" />
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <h3 className="font-serif text-gold-warm text-lg mb-3 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-gold-faded"></span> Notable Cases
+                  </h3>
+                  <ul className="space-y-3 list-disc pl-5 marker:text-gold-faded">
+                    <li><strong className="text-gold-faded font-medium">The Haunted Teddy Bear Case (Bengaluru/Noida):</strong> One of his frequently cited cases involving reported poltergeist phenomena, electronic disruptions, and movement tied to an object.</li>
+                    <li><strong className="text-gold-faded font-medium">Burari Deaths Perspective:</strong> Analysis of the infamous Burari family incident from both psychological and occult/paranormal angles.</li>
+                    <li><strong className="text-gold-faded font-medium">Karol Bagh Crematorium Encounter:</strong> Field investigations conducted during night hours in Delhi's crematoriums and abandoned structures.</li>
+                    <li><strong className="text-gold-faded font-medium">Goa & NCR Haunted Sites:</strong> Reviews and field reports on well-known haunted locations across India, including abandoned hotels in Goa and sites in Noida/Delhi.</li>
+                  </ul>
+                </div>
                 
-                <div className="py-2 flex items-start gap-3">
-                  <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
-                    <GraduationCap className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-serif text-xs text-gold-faded tracking-wider font-semibold">Scholarly Background</h4>
-                    <p className="text-xs text-ancient-beige/60 mt-0.5">Applied Geophysics, Varanasi Temple acoustics surveys, 1996-1998.</p>
-                  </div>
+                <div className="space-y-4 bg-black/20 p-5 rounded border border-bronze-dark/30">
+                  <h3 className="font-serif text-gold-warm text-lg mb-2 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-gold-faded"></span> Media & Podcast Appearances
+                  </h3>
+                  <p className="text-sm text-ancient-beige/70 mb-4">Ram Ashok Kumar has been featured on several popular Hindi podcasts and supernatural shows, including:</p>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gold-faded" />
+                      <span className="text-ancient-beige/90">Rahasya Unfolded</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gold-faded" />
+                      <span className="text-ancient-beige/90">Beyond Mic Show (with Siddharth Chopra)</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gold-faded" />
+                      <span className="text-ancient-beige/90">The Young Podcast (with Vikas)</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-gold-faded" />
+                      <span className="text-ancient-beige/90">Deep Verma Podcast</span>
+                    </li>
+                  </ul>
                 </div>
-
-                <div className="py-2 flex items-start gap-3">
-                  <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-serif text-xs text-gold-faded tracking-wider font-semibold">Active Fieldwork</h4>
-                    <p className="text-xs text-ancient-beige/60 mt-0.5">Over 110 documented expeditions across Rajasthan, Hampi, Kerala, and Uttarakhand.</p>
-                  </div>
-                </div>
-
-                <div className="py-2 flex items-start gap-3">
-                  <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
-                    <Award className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-serif text-xs text-gold-faded tracking-wider font-semibold">Philosophy</h4>
-                    <p className="text-xs text-ancient-beige/60 mt-0.5">No mysticism, no fear. Everything has an empirical origin waiting to be mapped.</p>
-                  </div>
-                </div>
-
-                <div className="py-2 flex items-start gap-3">
-                  <div className="p-2 bg-bronze-dark/30 rounded text-gold-warm border border-gold-faded/15">
-                    <BookOpen className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-serif text-xs text-gold-faded tracking-wider font-semibold">Ancient Texts</h4>
-                    <p className="text-xs text-ancient-beige/60 mt-0.5">Translating Rasa Shastras and Shilpa Shastras for geoelectrical clues.</p>
-                  </div>
-                </div>
-
               </div>
-
-              {/* Research Philosophy block */}
-              <div className="mt-6 py-4">
-                <h3 className="font-serif text-sm tracking-widest text-gold-warm font-semibold uppercase mb-2">The Research philosophy</h3>
-                <p className="text-xs text-ancient-beige/70 italic leading-relaxed m-0">
-                  "In the traditional Indian sciences, the Earth is seen as an active energetic network. Vastu, Shilpa, and Rasa Shastras mapped these points of friction. Modern geophysics names them magnetic anomalies, acoustic resonance, and chemical ionization. We do not destroy old legends; we decode them."
-                </p>
-              </div>
-
             </div>
           </div>
 
